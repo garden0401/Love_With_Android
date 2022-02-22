@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:behavior_hideable="true"
     app:behavior_draggable="true"
-    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    style="@style/CustomBottomSheet">
 
     <TextView
         android:layout_width="wrap_content"
