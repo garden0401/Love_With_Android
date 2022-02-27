@@ -23,7 +23,7 @@ const val channelName = "com.example.fcmtest"
 class MyFirebaseMessagingService: FirebaseMessagingService() {
 
     override fun onNewToken(token: String) {
-        super.onNewToken(token)
+
     }
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
@@ -34,14 +34,12 @@ class MyFirebaseMessagingService: FirebaseMessagingService() {
         }
 
         remoteMessage.notification?.let {
-
             sendNotification(it.title!!, it.body!!)
         }
     }
 
     private fun sendNotification(title: String, text: String) {
 
-        // 푸시알림 클릭 했을 때 이동할 Activity 지정
         val intent = Intent(this, MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         val pendingIntent = PendingIntent.getActivity(
@@ -56,10 +54,6 @@ class MyFirebaseMessagingService: FirebaseMessagingService() {
             .setSound(defaultSoundUri)
             .setContentIntent(pendingIntent)
             .setContent(getRemoteView(title, text))
-        // 커스텀 토스트를 사용하지 않고, 안드로이드 디폴트 푸시알림을 사용하려면
-        // 위 setContent() 한 줄을 지우고 setContentTitle(), setContentText()를 추가하면됨
-        //.setContentTitle(title)
-        //.setContentText(text)
 
 
         val notificationManager =
@@ -75,7 +69,6 @@ class MyFirebaseMessagingService: FirebaseMessagingService() {
         notificationManager.notify(0, notificationBuilder.build())
     }
 
-    // 푸시알림 커스텀 하는 메소드
     @SuppressLint("RemoteViewLayout")
     private fun getRemoteView(title: String, text: String): RemoteViews {
         val remoteView = RemoteViews("com.example.fcmtest", R.layout.push_notification)
@@ -94,7 +87,6 @@ class MyFirebaseMessagingService: FirebaseMessagingService() {
                     return@OnCompleteListener
                 }
 
-                // Get new FCM registration token
                 val token = task.result
                 if (token != null) {
                     Log.d("TokenTest", token)
