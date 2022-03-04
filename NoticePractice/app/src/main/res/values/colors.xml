@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+    <!-- Sobok Gray Color -->
+    <color name="white_sub">#FFFFFF</color>
+    <color name="gray100_sub">#F7F8F9</color>
+    <color name="gray150_sub">#EFF2F4</color>
+    <color name="gray200_sub">#E3E8EB</color>
+    <color name="gray300_sub">#D6DBE0</color>
+    <color name="gray400_sub">#C2C9CE</color>
+    <color name="gray500_sub">#A1A9AE</color>
+    <color name="gray600_sub">#848C92</color>
+    <color name="gray700_sub">#676E74</color>
+    <color name="gray800_sub">#494F52</color>
+    <color name="gray900_sub">#333738</color>
+    <color name="black_sub">#1F2022</color>
+
+    <!-- Sobok Main Color -->
+    <color name="mint_main">#18CEC6</color>
+    <color name="middle_mint_main">#8DEBE7</color>
+    <color name="dark_mint_main">#00ABB6</color>
+    <color name="light_mint">#E4F6F6</color>
+    <color name="light_pink">#FFF1F1</color>
+
+    <!-- Sobok Pill Color -->
+    <color name="pill_color_red">#FF5C5C</color>
+    <color name="pill_color_orange">#FF9900</color>
+    <color name="pill_color_purple">#9468F0</color>
+    <color name="pill_color_blue">#54ADFF</color>
+    <color name="pill_color_pink">#FF67C2</color>
+
+
+</resources>

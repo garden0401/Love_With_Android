@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NoticePractice" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white_sub</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:includeFontPadding">false</item>
+        <!-- Pill Add Bottom Sheet -->
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
+        <item name="android:timePickerStyle">@style/MyTimePickerTheme</item>
+    </style>
+
+    <style name="PillAddCycle">
+        <item name="android:fontFamily">@font/pretendard_semi_bold</item>
+    </style>
+
+    <style name="PillAddTitle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/gray800_sub</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/pretendard_semi_bold</item>
+
+    </style>
+
+    <!-- Pill Add Bottom Sheet -->
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <!-- Calendar Date-->
+    <style name="CalendarTopDayOfWeekTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray600_sub</item>
+        <item name="android:fontFamily">@font/pretendard_semi_bold</item>
+    </style>
+
+    <!--    <style name="TestStyle" parent="@style/TextAppearance.AppCompat">-->
+    <!--        <item name="android:textColor">@color/black_sub</item>-->
+    <!--    </style>-->
+
+    <style name="CalendarDateDoneTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white_sub</item>
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CalendarDateDoneSelectTextStyle" parent="@style/CalendarDateDoneTextStyle">
+        <item name="android:fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="CalendarDateDefaultTextStyle" parent="@style/CalendarDateDoneTextStyle">
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black_sub</item>
+    </style>
+
+    <style name="CalendarDateDoingTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_sub</item>
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CalendarDateDoingSelectTextStyle" parent="@style/CalendarDateDoingTextStyle">
+        <item name="android:fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="CalendarDateNoneSelectTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/mint_main</item>
+        <item name="android:fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="CalendarTodayTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="MemberNotSelectTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/middle_mint_main</item>
+        <item name="android:fontFamily">@font/pretendard_medium</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="MemberSelectTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white_sub</item>
+        <item name="android:fontFamily">@font/pretendard_extra_bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <!-- Tiem Picker-->
+    <style name="MyTimePickerTheme" parent="android:Widget.Material.Light.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+</resources>

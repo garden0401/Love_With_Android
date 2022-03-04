@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        android:font="@font/pretendard_thin"
+        android:fontWeight="100"
+        app:font="@font/pretendard_thin"
+        app:fontWeight="100"/>
+
+    <font
+        android:font="@font/pretendard_extra_light"
+        android:fontWeight="200"
+        app:font="@font/pretendard_extra_light"
+        app:fontWeight="200"/>
+
+    <font
+        android:font="@font/pretendard_light"
+        android:fontWeight="300"
+        app:font="@font/pretendard_light"
+        app:fontWeight="300"/>
+
+    <font
+        android:font="@font/pretendard_regular"
+        android:fontWeight="400"
+        app:font="@font/pretendard_regular"
+        app:fontWeight="400"/>
+
+    <font
+        android:font="@font/pretendard_medium"
+        android:fontWeight="500"
+        app:font="@font/pretendard_medium"
+        app:fontWeight="500"/>
+
+    <font
+        android:font="@font/pretendard_semi_bold"
+        android:fontWeight="600"
+        app:font="@font/pretendard_semi_bold"
+        app:fontWeight="600"/>
+
+    <font
+        android:font="@font/pretendard_bold"
+        android:fontWeight="700"
+        app:font="@font/pretendard_bold"
+        app:fontWeight="700"/>
+
+    <font
+        android:font="@font/pretendard_extra_bold"
+        android:fontWeight="800"
+        app:font="@font/pretendard_extra_bold"
+        app:fontWeight="800"/>
+
+    <font
+        android:font="@font/pretendard_black"
+        android:fontWeight="900"
+        app:font="@font/pretendard_black"
+        app:fontWeight="900"/>
+
+</font-family>
