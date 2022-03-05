@@ -13,7 +13,7 @@
 
         <variable
             name="noticeInfo"
-            type="com.example.sobok_android.presentation.view.notice.model.NoticeInfoData" />
+            type="com.example.noticepractice.presentation.view.model.NoticeInfoData" />
 
     </data>
 
