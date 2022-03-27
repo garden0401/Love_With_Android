@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -14,12 +15,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val bottomSheetView = layoutInflater.inflate(R.layout.bottom_sheet_layout, null)
-        val bottomSheetDialog = BottomSheetDialog(this)
-        bottomSheetDialog.setContentView(bottomSheetView)
-
         findViewById<Button>(R.id.button).setOnClickListener {
-            bottomSheetDialog.show()
+            val bottomSheet = BottomSheetFragment()
+            bottomSheet.show(supportFragmentManager, bottomSheet.tag)
         }
 
     }

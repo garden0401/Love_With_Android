@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_calendar_alarm_gray.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/ic_calendar_alarm_mint.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/ic_fill_alarm_gray.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/ic_fill_alarm_mint.xml" value="0.19444444444444445" />
         <entry key="app/src/main/res/drawable/ic_illust_opps.xml" value="0.4197916666666667" />
         <entry key="app/src/main/res/font/font_pretendard.xml" value="0.42717948717948717" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.38958333333333334" />
