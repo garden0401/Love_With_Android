@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.test.databinding.ItemStickerListBinding
 
 class StickerAdapter : RecyclerView.Adapter<StickerAdapter.StickerViewHolder>() {
-    val stickerList = mutableListOf<StickerData>()
+    private var stickerList : MutableList<StickerData> = ArrayList()
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -24,6 +24,13 @@ class StickerAdapter : RecyclerView.Adapter<StickerAdapter.StickerViewHolder>() 
     }
 
     override fun getItemCount(): Int = stickerList.size
+
+    fun setItem(items: MutableList<StickerData>) {
+        if(!items.isNullOrEmpty()) {
+            stickerList = items
+            notifyDataSetChanged()
+        }
+    }
 
     class StickerViewHolder(private val binding: ItemStickerListBinding)
         : RecyclerView.ViewHolder(binding.root) {
